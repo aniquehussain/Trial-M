@@ -1,0 +1,418 @@
+@font-face {
+  font-family: Gotham-Book;
+  src: url('Gotham-Book.otf');
+}
+
+@font-face {
+  font-family: Gotham-LightItalic;
+  src: url('Gotham-LightItalic.otf');
+}
+
+@font-face {
+  font-family: Gotham-Medium;
+  src: url('Gotham-Medium.otf');
+}
+
+@font-face {
+  font-family: Hobo-Std-Medium;
+  src: url('Hobo-Std-Medium.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url('Montserrat-SemiBold.ttf');
+}
+
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Montserrat-Medium;
+  overflow-x: hidden;
+  font-size: 12px;
+  color: #111;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  padding: 8% 1% 1% 1%;
+  margin: 0 auto;
+  display: block;
+}
+
+h2, h4 {
+  font-weight: normal;
+}
+
+span {
+  font-weight: bold;
+}
+
+.always {
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  left: 24%;
+  bottom: 0.7rem;
+}
+
+.logo {
+  width: 13%;
+  float: left;
+  z-index: -2;
+  padding: 7% 3% 1% 3%;
+}
+
+.thank {
+  margin-top: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0px;
+  margin-bottom: 0px;
+  font-family: Gotham-Book;
+}
+
+.hrhead {
+  border-bottom: 0px;
+  border-color: black;
+  width: 60%;
+  margin-top: 0.2%;
+  margin-bottom: 0.2%;
+}
+
+.thank-note {
+  text-align: center;
+  margin: 0px 10% 20% 10%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100vw;
+}
+
+.td-hr {
+  border: 1px solid black;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-spacing: 0px;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.tbhead {
+  width: 100%;
+  background-color: #f2cbcc;
+  height: 3rem;
+  box-shadow: 2px 2px 4px #f0f0f0;
+  text-align: left;
+}
+
+.price {
+  text-align: center;
+}
+
+.quantity {
+  text-align: right;
+}
+
+.quantity-val {
+  text-align: center;
+}
+
+.price-val {
+  font-weight: Bold;
+  text-align: left;
+}
+
+.discount {
+  padding-bottom: 2%;
+}
+
+.totalc {
+  text-align: left;
+  margin-left: 30%;
+}
+
+.grand {
+  width: 100px;
+  background-color: #b3ffb3;
+  box-shadow: 2% 2% 5% #f0f0f0;
+  height: 3rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.payment {
+  width: 100%;
+  background-color: #adaaf0;
+  box-shadow: 2% 2% 5% #f0f0f0;
+  height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 3rem;
+}
+
+.disclaimer {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.download {
+  background-color: blue;
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Montserrat-Regular;
+  font-size: 17px;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px gray;
+  margin: 10% 20% 5% 20%;
+}
+
+.forhead {
+  font-family: Hobo-Std-Medium;
+  font-size: 2rem;
+}
+
+.for-desc {
+  font-weight: Bold;
+  font-family: Montserrat-Bold;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.image-foryou {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 2px 2px 4px #f0f0f0;
+}
+
+.hr-red {
+  border-color: red;
+  width: 60%
+}
+
+.sign {
+  text-align: center;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+li a:hover {
+  color: red;
+}
+
+li a {
+  color: #3b3431;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 2rem;
+  font-family: Montserrat-Medium;
+  font-weight: bold;
+}
+
+.avail {
+  text-align: center;
+  position: relative;
+  bottom: 3.7rem;
+  left: 2rem;
+}
+
+.play {
+  width: 30%;
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  top: 4.9rem;
+  right: 7rem;
+}
+
+.social {
+  text-align: right;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  position: relative;
+  bottom: 6rem;
+}
+
+@media only screen and (min-width: 750px) {
+  html, body {
+    font-size: 1rem;
+    margin: 1%;
+    width: 98%;
+    overflow-x: visible;
+  }
+
+  header {
+    background-color: #f3f3f3;
+  }
+
+  table {
+    width: 100%;
+    position: relative;
+    bottom: 12.5rem;
+  }
+
+  .billing-details {
+    float: right;
+    position: relative;
+    bottom: 12rem;
+  }
+  .payment{
+    position: relative;
+    bottom: 12rem;
+  }
+ .down{
+   position: relative;
+   bottom: 12rem;
+ }
+ footer{
+   position: relative;
+   bottom: 0;
+ }
+  h1 {
+    position:static;
+    font-size: 4rem;
+    display: block;
+    margin: 0;
+    padding: 1% 0 0 0;
+    position: relative;
+    right: 4rem;
+
+  }
+
+  .logo {
+    width: 130px;
+    padding: 1% 2% 0 5%;
+  }
+
+  .always {
+    font-size: 1.5rem;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    left: auto;
+  }
+
+  .thank {
+    margin-top: 5%;
+    font-size: 1.5rem;
+  }
+
+  .thank-note {
+    margin: 0px 10% 5% 10%;
+    font-size:1.3rem;
+  }
+.order-detalils{
+  padding: 0;
+  margin: 0;
+}
+.quantity {
+  text-align: center;
+}
+.total-table{
+  padding-left: 30%;
+}
+  .td-hr {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+  }
+
+  .tbhead {
+    width: 80%;
+    background-color: #f2cbcc;
+    box-shadow: 2px 2px 4px #f0f0f0;
+  }
+.download{
+  margin: 0 5% 0 0 ;
+  float: right;
+}
+.forhead{
+  font-size: 4rem;
+}
+  .play {
+    width: 10%;
+    position: relative;
+    /* margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%; */
+    top: 0.1%;
+    right: 3rem;
+    bottom: 1rem;
+  }
+.footer{
+  height: 0px;
+}
+  .avail {
+    text-align: center;
+    position: relative;
+    bottom: 6.5rem;
+    left: rem;
+    display: inline-block;
+  }
+
+  .image-foryou {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .sign {
+    margin-bottom: 5%;
+  }
+
+  li {
+    float: left;
+  }
+
+  .social {
+    text-align: right;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    position: relative;
+    bottom: 11.7rem;
+    display: inline-block;
+  }
+
+  .social a img {
+    width: 3%;
+  }
+
+  li a {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
