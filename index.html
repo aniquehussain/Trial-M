@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="width: 100%;
+margin: 0px;
+padding: 0px;
+font-family: Montserrat-Medium;
+overflow-x: hidden;
+font-size: 12px;
+color: #111;">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>meKvahan</title>
+  <style type="text/css">
+    @font-face {
+      font-family: Gotham-Book;
+      src: url('Font/Gotham-Book.otf');
+    }
+
+    @font-face {
+      font-family: Gotham-LightItalic;
+      src: url('Font/Gotham-LightItalic.otf');
+    }
+
+    @font-face {
+      font-family: Gotham-Medium;
+      src: url('Font/Gotham-Medium.otf');
+    }
+
+    @font-face {
+      font-family: Hobo-Std-Medium;
+      src: url('Font/Hobo-Std-Medium.ttf');
+    }
+
+    @font-face {
+      font-family: Montserrat-Bold;
+      src: url('Font/Montserrat-Bold.ttf');
+    }
+
+    @font-face {
+      font-family: Montserrat-Medium;
+      src: url('Font/Montserrat-Medium.ttf');
+    }
+
+    @font-face {
+      font-family: Montserrat-Regular;
+      src: url('Font/Montserrat-Regular.ttf');
+    }
+
+    @font-face {
+      font-family: Montserrat-SemiBold;
+      src: url('Font/Montserrat-SemiBold.ttf');
+    }
+
+    @media only screen and (min-width: 450px) {
+      body {
+        font-size: 1.1rem !important;
+        background-position: 50% 26.5% !important;
+        background-size: 75% !important;
+      }
+
+      .grand {
+        height: 4.5rem !important;
+      }
+
+      .tbhead {
+        width: 80%;
+        height: 4.5rem !important;
+      }
+
+      .payment {
+        height: 3rem !important;
+        padding-top: 1% !important;
+        padding-bottom: 1% !important;
+
+      }
+
+      .title {
+        font-size: 3rem !important;
+        position: relative !important;
+      }
+
+      .sub-title {
+        left: 18% !important;
+        font-size: 1.2rem !important;
+        top: 7% !important;
+      }
+
+      .logo {
+        padding: 7% 3% 1% 10% !important;
+      }
+
+      .thank {
+        font-size: 1.4rem !important;
+        padding-top: 0 !important;
+        margin-top: 8% !important;
+      }
+
+      .thank-note {
+        font-size: 1.1rem !important;
+        margin-bottom: 8% !important;
+      }
+
+      .download {
+        margin: 10% 34% 5% 34% !important;
+      }
+
+      .forhead {
+        font-size: 4rem !important;
+        margin-top: 4% !important;
+        margin-bottom: 2% !important;
+      }
+
+      .play-ico {
+        width: 120px !important;
+        position: absolute !important;
+        top: 1rem !important;
+        left: 43% !important;
+      }
+    }
+
+    @media only screen and (min-width: 600px) {
+      body {
+        font-size: 1.3rem !important;
+        background-position: 50% 26% !important;
+        background-size: 60% !important;
+      }
+
+      .sub-title {
+        font-size: 1.5rem !important;
+        bottom: 1.5rem !important;
+        left: 20% !important;
+      }
+
+      .title {
+        font-size: 4rem !important;
+      }
+
+      .image-offer {
+        width: 50% !important;
+      }
+
+      .play-ico {
+        padding-top: 1% !important;
+      }
+
+      .download {
+        margin: 10% 34% 5% 40% !important;
+      }
+    }
+
+    @media only screen and (min-width:820px) {
+      body {
+        background-position: 50% 27.5% !important;
+        background-size: 70% !important;
+      }
+    }
+
+    @media only screen and (min-width: 1040px) {
+      body {
+        font-size: 1.5rem !important;
+        margin: 1% !important;
+        width: 98% !important;
+        overflow-x: visible !important;
+      }
+
+      table {
+        width: 100% !important;
+      }
+
+      .title {
+        position: relative !important;
+        font-size: 5rem !important;
+        display: block !important;
+        margin: 0 !important;
+        padding: 1% 0 0 0 !important;
+        position: relative !important;
+        right: 6rem !important;
+      }
+
+      .logo {
+        width: 120px !important;
+        padding: 1% 2% 0 5% !important;
+        position: relative !important;
+        z-index: 2 !important;
+      }
+
+      .sub-title {
+        font-size: 2rem !important;
+        display: block !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+        position: relative !important;
+        left: -2.5rem !important;
+        bottom: 1rem !important;
+      }
+
+      .thank {
+        margin-top: 5% !important;
+        font-size: 1.5rem !important;
+      }
+
+      .thank-note {
+        margin: 0px 10% 5% 10% !important;
+        font-size: 1.3rem !important;
+      }
+
+      .quantity {
+        text-align: center !important;
+      }
+
+      .total-table {
+        padding-left: 30% !important;
+      }
+
+      .td-hr {
+        padding-top: 0.9rem !important;
+        padding-bottom: 0.9rem !important;
+      }
+
+      .download {
+        margin: 0 5% 0% 0 !important;
+        float: right !important;
+      }
+
+      .forhead {
+        font-size: 3rem !important;
+        padding-top: 5% !important;
+        margin-top: 3% !important;
+        text-align: center !important;
+
+      }
+
+      .forhead span {
+        font-size: 4rem !important;
+      }
+
+      .forhead {
+        font-size: 4rem !important;
+      }
+
+      .disclaimer {
+        padding-top: 1% !important;
+        padding-bottom: 1% !important;
+      }
+
+      .hrdesc2 {
+        padding-bottom: 3% !important;
+      }
+
+      .hr-desc {
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
+        border-color: black !important;
+        border-style: solid !important;
+
+      }
+
+      .image-offer {
+        width: 45% !important;
+        display: block !important;
+        margin: 0 auto !important;
+        margin: 0 40% 2% 28% !important;
+      }
+
+      .for-desc {
+        margin-left: 25% !important;
+      }
+
+      .offer {
+        font-size: 4rem !important;
+      }
+
+      .sign {
+        margin-bottom: 5% !important;
+      }
+
+      li {
+        float: left !important;
+        display: block !important;
+      }
+
+      li a {
+        padding-left: 2rem !important;
+        padding-right: 3rem !important;
+      }
+
+      footer {
+        margin-left: 7% !important;
+        margin-right: 7% !important;
+      }
+
+      .stay-list {
+        position: relative !important;
+        padding: 0 !important;
+        float: right !important;
+        top: 0.1% !important;
+        z-index: 1 !important;
+        margin: 0 10% 0 0 !important;
+        bottom: 2rem !important;
+        left: 3rem !important;
+
+      }
+
+       !important;
+
+      .icon-li {
+        padding-left: 5% !important;
+        padding-right: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+      }
+
+      .stay-list a {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      .avail-final {
+        margin-top: 1% !important;
+
+      }
+
+      .play-ico {
+        position: relative !important;
+        z-index: 1 !important;
+        top: -4.2rem !important;
+        left: 9rem !important;
+      }
+
+      footer {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      @media only screen and (min-width:1200px) {
+        body {
+          font-size: 1.5rem !important;
+          background-position: 50% 26.5% !important;
+          background-size: 45% !important;
+        }
+
+        .title {
+          font-size: 6rem !important;
+          right: 6rem !important;
+        }
+
+        .sub-title {
+          left: 0.5rem !important;
+        }
+
+        .thank {
+          font-size: 2.5rem !important;
+          font-weight: normal !important;
+        }
+
+        .thank-note {
+          font-size: 1.8rem !important;
+        }
+
+        .payment {
+          height: 2rem !important;
+
+        }
+
+        footer {
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+
+        .links {
+          font-size: 1.7rem !important;
+        }
+
+        .stay-list {
+          position: relative !important;
+          padding: 0 !important;
+          margin: 0 10% 0 0 !important;
+          bottom: 2rem !important;
+          float: right !important;
+          left: 3rem !important;
+        }
+
+         !important;
+
+        .avail-final {
+          position: relative !important;
+          top: 3.5rem !important;
+          padding-bottom: 1% !important;
+          right: 44rem !important;
+          z-index: 5 !important;
+        }
+
+        .play-ico {
+          position: relative !important;
+          top: -4.7rem !important;
+          left: 10rem !important;
+        }
+
+      }
+  </style>
+</head>
+
+<body style="width: 100%;
+margin: 0px;
+padding: 0px;
+font-family: Montserrat-Medium;
+overflow-x: hidden;
+font-size: 12px;
+color: #111;background-image: url('asset/Asset 9.svg');
+background-repeat: no-repeat;
+background-position: 50% 32%;
+background-size: 100%;">
+
+  <header>
+    <img class="logo" style="width: 13%;
+    float: left;
+    padding: 7% 3% 1% 3%;" src="asset/Asset 1hdpi.png" alt="meKvahan logo">
+
+    <h1 class="title" style="color: red;
+    text-align: center;
+    padding: 7% 1% 1% 1%;
+    margin: 0 20% 0 20%;
+    display: block;
+    font-size: 2.5rem;">MEKVAHAN</h1>
+
+    <h2 class="sub-title" style="font-weight: normal;font-size: 1rem;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    left: 18%;
+    bottom: 0.7rem;">Always cares ur vahan</h2>
+  </header>
+
+  <main>
+    <h2 class="thank" style="  margin-top: 20%;
+      margin-left: 20%;
+      margin-right: 20%;
+      font-size: 1rem;
+      text-align: center;
+      padding: 0px;
+      margin-bottom: 0px;
+      font-family: Gotham-Book;">Thanks for choosing our services, <span style="font-weight: bold;">Mr.Abhishek!</span></h2>
+
+    <hr class="hrhead" style="  border-bottom: 0px;
+      border-color: black;
+      width: 60%;
+      margin-top: 0.2%;
+      margin-bottom: 0.2%;">
+
+    <h4 class="thank-note" style="font-weight: normal;text-align: center;
+    margin: 0px 10% 20% 10%;">We know the language of machines! Machines talk to us.</h4>
+
+    <table style="  border-collapse: collapse;
+      width: 100vw;line-height:2rem;">
+      <!-- Order Details & Billing Details -->
+      <tr>
+        <td><span style="font-weight:Bold">Order Id- </span>HTLPPMV0001</td>
+        <td style="text-align:right">11 January 2019</td>
+      </tr>
+      <tr>
+        <td><span style="font-weight:Bold">Invioce no- </span>#MV1901110001</td>
+        <td style="text-align:right"><span style="font-weight:Bold">Billed To -</span> Mr.Abhishek</td>
+      </tr>
+      <tr>
+        <td><span style="font-weight:Bold">Order placed at: </span>30/11/2018, 10:11 PM</td>
+        <td style="text-align:right">9717747611</td>
+      </tr>
+      <tr>
+        <td><span style="font-weight:Bold">Pickup due date: </span>30/11/2018, 10:53 PM</td>
+        <td style="text-align:right">(South Delhi 110047)</td>
+      </tr>
+      <tr>
+        <td><span style="font-weight:Bold">Service location: </span>Mekvahan vendor <span style="font-weight:Bold">#11</span></td>
+        <td style="text-align:right">
+          <h2 class="amt">Amount- <span style="font-weight:Bold">Rs.830.00</span></h2>
+        </td>
+      </tr>
+    </table>
+    <table style="  border-collapse: collapse;
+      width: 100vw;">
+      <thead>
+        <tr class="tbhead" style="  width: 100%;
+          background-color: #f2cbcc;
+          height: 3rem;
+          box-shadow: 2px 2px 4px #f0f0f0;
+          text-align: left;">
+          <th>Item Name</th>
+          <th class="quantity" style="text-align: right;">Quantity</th>
+          <th class="price" style="text-align: center;">Price</th>
+        </tr>
+      </thead>
+      <tr>
+        <td class="td-hr" style="  border: 1px solid black;
+          border-top: 0px;
+          border-left: 0px;
+          border-right: 0px;
+          border-spacing: 0px;
+          padding-top: 0.7rem;
+          padding-bottom: 0.7rem;">Comprehensive Service<br>(Castrol Engine Oil,Air Filter,Additives,Gear oil 120ml <br>Replace)<br>(25points Checkup)<br>(Brake Servicing)(Lag,Lock & Wheel Checking)</td>
+        <td class="quantity-val td-hr" style="  border: 1px solid black;
+          border-top: 0px;
+          border-left: 0px;
+          border-right: 0px;
+          border-spacing: 0px;
+          padding-top: 0.7rem;
+          padding-bottom: 0.7rem;text-align: center;">1</td>
+
+        <td class="price-val td-hr" style="  border: 1px solid black;
+          border-top: 0px;
+          border-left: 0px;
+          border-right: 0px;
+          border-spacing: 0px;
+          padding-top: 0.7rem;
+          padding-bottom: 0.7rem;font-weight: Bold;
+          text-align: left;">Rs.650.00</td>
+
+      </tr>
+
+      <tr>
+        <td class="td-hr" style="  border: 1px solid black;
+          border-top: 0px;
+          border-left: 0px;
+          border-right: 0px;
+          border-spacing: 0px;
+          padding-top: 0.7rem;
+          padding-bottom: 0.7rem;">Bike Wash & Polish (Coupon Code Applied "MVNEW")</td>
+        <td class="quantity-val td-hr" style="  border: 1px solid black;
+          border-top: 0px;
+          border-left: 0px;
+          border-right: 0px;
+          border-spacing: 0px;
+          padding-top: 0.7rem;
+          padding-bottom: 0.7rem;text-align: center;">1</td>
+        <td class="price-val td-hr" style="  border: 1px solid black;
+          border-top: 0px;
+          border-left: 0px;
+          border-right: 0px;
+          border-spacing: 0px;
+          padding-top: 0.7rem;
+          padding-bottom: 0.7rem;font-weight: Bold;
+          text-align: left;">Free</td>
+
+      </tr>
+
+      <tr>
+        <td class="td-hr" style="border: 1px solid black;
+          border-top: 0px;
+          border-left: 0px;
+          border-right: 0px;
+          border-spacing: 0px;
+          padding-top: 0.7rem;
+          padding-bottom: 0.7rem;">Seat Cover(Honda Active)</td>
+        <td class="quantity-val td-hr" style="  border: 1px solid black;
+          border-top: 0px;
+          border-left: 0px;
+          border-right: 0px;
+          border-spacing: 0px;
+          padding-top: 0.7rem;
+          padding-bottom: 0.7rem;text-align: center;">1</td>
+        <td class="price-val td-hr" style="  border: 1px solid black;
+          border-top: 0px;
+          border-left: 0px;
+          border-right: 0px;
+          border-spacing: 0px;
+          padding-top: 0.7rem;
+          padding-bottom: 0.7rem;font-weight: Bold;
+          text-align: left;">Rs.180.00</td>
+
+      </tr>
+      <tr>
+        <td></td>
+        <td class="total-table">Item Total:</td>
+        <td style="font-weight:Bold;">Rs.830.00</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="total-table">GST:</td>
+        <td style="font-weight:Bold;">Rs.41.50</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="discount total-table" style="padding-bottom: 2%;">Discount Applied(<span style="font-family:Gotham-LightItalic;">RC2-BYUOOU</span>):</td>
+        <td></td>
+      <tr class="grand" style="width: 100px;
+      background-color: #b3ffb3;
+      box-shadow: 2% 2% 5% #f0f0f0;
+      height: 3rem;
+      padding-left: 5%;
+      padding-right: 5%;">
+        <td></td>
+        <td class="total-table">Grand Total:</td>
+        <td style="font-weight:Bold;">Rs.841.50</td>
+      </tr>
+      </tr>
+
+    </table>
+
+
+    <p class="payment" style=" vertical-align:middle;width: 100%;
+    background-color: #adaaf0;
+    box-shadow: 2% 2% 5% #f0f0f0;
+    height: 3rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3rem;">Payment mode: <span style="font-weight:Bold;">Paid by Paytm Wallet</span></p>
+    <br><br>
+    <hr class="hr-desc">
+
+    <p class="disclaimer" style="margin-left: 3%;
+    margin-right: 3%;"><span style="font-weight:Bold;">Disclaimer : </span> This is an acknowledgement of Service of the Order and not an actual invioce. Details mentioned above including the menu prices and taxes(as applicable) are as provided by
+      the Service Vendors to
+      Mekvahan. Responsiblity of charging(or not charging) taxes lies with the Service Vendors and Mekvahan disclaims any liablity that may arise in this respect. </p>
+    <hr class="hr-desc hrdesc2">
+    <a class="download" style="background-color: blue;
+    border-radius: 28px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Montserrat-Regular;
+    font-size: 17px;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px gray;
+    margin: 10% 20% 5% 20%;" href="#" download="#">Download Invoice</a>
+
+      <h1 class="forhead" style="  font-family: Hobo-Std-Medium;
+        font-size: 2rem;
+        color: red;
+        text-align: center;">FOR YOU,<span style="color:#494a4f;">FROM US</span></h1>
+
+      <img class="image-offer" style="  width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        box-shadow: 2px 2px 4px #f0f0f0;" src="asset/Asset 3hdpi.png" alt="Discount Offer-Coupon">
+
+      <p class="for-desc" style="font-weight: Bold;
+      font-family: Montserrat-Bold;
+      margin-left: 5%;
+      margin-right: 5%;">Glad you chose meKvahan to make your life simpler! Check out Offers in different services <br><a style="color:blue;" href="#">here.</a></p>
+      <br><br>
+
+      <p class="for-desc" style="font-weight: Bold;
+      font-family: Montserrat-Bold;
+      margin-left: 5%;
+      margin-right: 5%;">Cheers!</p>
+
+      <p class="for-desc" style="font-weight: Bold;
+      font-family: Montserrat-Bold;
+      margin-left: 5%;
+      margin-right: 5%;">The meKvahan Team. </p><br>
+      <br>
+
+      <hr class="hr-red" style="border-color: red;
+      width: 60%">
+
+      <p class="sign" style="  text-align: center;
+        margin-left: 3%;
+        margin-right: 3%;">(This is a computer generated document. Does not require any signature.)</p>
+  </main>
+  <br>
+  <footer style="overflow-y: hidden;
+  overflow-x: hidden;">
+    <ul class="list-ul" style="  position: relative;
+      right: 1.2rem;">
+      <li style="  list-style: none;
+        text-align: center;
+        margin: 2% auto 2% auto;
+        transform: scaleY(0.95);"><a style="color: #3b3431;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 2rem;
+        font-family: Montserrat-SemiBold;
+        font-weight: bold;" class="links" href="#">About us</a></li>
+      <li style="  list-style: none;
+        text-align: center;
+        margin: 2% auto 2% auto;
+        transform: scaleY(0.95);"><a style="color: #3b3431;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 2rem;
+        font-family: Montserrat-SemiBold;
+        font-weight: bold;" class="links" href="#">Privacy policy</a></li>
+      <li style="  list-style: none;
+        text-align: center;
+        margin: 2% auto 2% auto;
+        transform: scaleY(0.95);"><a style="color: #3b3431;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 2rem;
+        font-family: Montserrat-SemiBold;
+        font-weight: bold;" class="links" href="#">Terms & Conditions</a></li>
+      <li style="  list-style: none;
+        text-align: center;
+        margin: 2% auto 2% auto;
+        transform: scaleY(0.95);" class="avail-final">
+        <p class="links">Available on:</p>
+        <a style="color: #3b3431;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 2rem;
+        font-family: Montserrat-SemiBold;
+        font-weight: bold;" href="#"><img class="play-ico" style="  width:120px;
+        position: absolute;
+        top: 1rem;
+        left: 30%;" src="asset/Asset 4xhdpi.png" alt="Google Play Link"></a>
+      </li>
+      
+      <li style="  list-style: none;
+        text-align: center;
+        margin: 2% auto 2% auto;
+        transform: scaleY(0.95);" class="stay-list">
+        <p class="stay-li" style="font-weight:bold;transform: scaleY(0.9);">Stay Connected</p>
+        <a style="color: #3b3431;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 2rem;
+      font-family: Montserrat-SemiBold;
+      font-weight: bold;" href="#"><img class="icon-li" src="asset/Asset 6mdpi.png" alt="instagram Link"></a>
+        <a style="color: #3b3431;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 2rem;
+      font-family: Montserrat-SemiBold;
+      font-weight: bold;" href="#"><img class="icon-li" src="asset/Asset 7mdpi.png " alt="Twitter Link"></a>
+        <a style="color: #3b3431;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 2rem;
+      font-family: Montserrat-SemiBold;
+      font-weight: bold;" href="#"><img class="icon-li" src="asset/Asset 8mdpi.png" alt="Linked-in Link"></a>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
