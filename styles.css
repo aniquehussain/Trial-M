@@ -1,0 +1,548 @@
+@font-face {
+  font-family: Gotham-Book;
+  src: url('Font/Gotham-Book.otf');
+}
+
+@font-face {
+  font-family: Gotham-LightItalic;
+  src: url('Font/Gotham-LightItalic.otf');
+}
+
+@font-face {
+  font-family: Gotham-Medium;
+  src: url('Font/Gotham-Medium.otf');
+}
+
+@font-face {
+  font-family: Hobo-Std-Medium;
+  src: url('Font/Hobo-Std-Medium.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('Font/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('Font/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('Font/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url('Font/Montserrat-SemiBold.ttf');
+}
+
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Montserrat-Medium;
+  overflow-x: hidden;
+  font-size: 12px;
+  color: #111;
+}
+
+.title {
+  color: red;
+  text-align: center;
+  padding: 7% 1% 1% 1%;
+  margin: 0 20% 0 20%;
+  display: block;
+  font-size: 2.5rem;
+}
+
+footer {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+h2, h4 {
+  font-weight: normal;
+}
+
+span {
+  font-weight: bold;
+}
+
+.always {
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  left: 18%;
+  bottom: 0.7rem;
+}
+
+.logo {
+  width: 13%;
+  float: left;
+  padding: 7% 3% 1% 3%;
+}
+
+.thank {
+  margin-top: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0px;
+  margin-bottom: 0px;
+  font-family: Gotham-Book;
+}
+
+.hrhead {
+  border-bottom: 0px;
+  border-color: black;
+  width: 60%;
+  margin-top: 0.2%;
+  margin-bottom: 0.2%;
+}
+
+.thank-note {
+  text-align: center;
+  margin: 0px 10% 20% 10%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100vw;
+}
+
+.td-hr {
+  border: 1px solid black;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-spacing: 0px;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.tbhead {
+  width: 100%;
+  background-color: #f2cbcc;
+  height: 3rem;
+  box-shadow: 2px 2px 4px #f0f0f0;
+  text-align: left;
+}
+
+.price {
+  text-align: center;
+}
+
+.quantity {
+  text-align: right;
+}
+
+.quantity-val {
+  text-align: center;
+}
+
+.price-val {
+  font-weight: Bold;
+  text-align: left;
+}
+
+.discount {
+  padding-bottom: 2%;
+}
+
+.totalc {
+  text-align: left;
+  margin-left: 30%;
+}
+
+.grand {
+  width: 100px;
+  background-color: #b3ffb3;
+  box-shadow: 2% 2% 5% #f0f0f0;
+  height: 3rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.payment {
+  width: 100%;
+  background-color: #adaaf0;
+  box-shadow: 2% 2% 5% #f0f0f0;
+  height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 3rem;
+}
+
+.disclaimer {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.download {
+  background-color: blue;
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Montserrat-Regular;
+  font-size: 17px;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px gray;
+  margin: 10% 20% 5% 20%;
+}
+
+.forhead {
+  font-family: Hobo-Std-Medium;
+  font-size: 2rem;
+  color: red;
+  text-align: center;
+}
+
+.for-desc {
+  font-weight: Bold;
+  font-family: Montserrat-Bold;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.image-foryou {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 2px 2px 4px #f0f0f0;
+}
+
+.hr-red {
+  border-color: red;
+  width: 60%
+}
+
+.sign {
+  text-align: center;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+ul {
+  position: relative;
+  right: 1.2rem;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+  margin: 2% auto 2% auto;
+  transform: scaleY(0.95);
+}
+
+li a:hover {
+  color: red;
+}
+
+li a {
+  color: #3b3431;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 2rem;
+  font-family: Montserrat-SemiBold;
+  font-weight: bold;
+}
+
+.avail {
+  text-align: center;
+  position: relative;
+  bottom: 6.5rem;
+  right: 4rem;
+}
+
+.avail span {
+  position: relative;
+  left: 1.5rem;
+}
+
+td a img {
+  width: 40px;
+}
+
+td .available {
+  width: 150px;
+}
+
+.available {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  position: relative;
+  top: 0.5rem;
+  right: 2rem;
+  margin-left: 8%;
+}
+
+.stay {
+  text-align: right;
+  position: relative;
+  padding-right: 1rem;
+  font-weight: bold;
+}
+
+.stay-table {
+  position: relative;
+  bottom: 2.5rem;
+  text-align: right;
+  padding-right: 1.7rem;
+}
+}
+
+.play {
+  width: 30%;
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  top: 8.25rem;
+  right: 7.5rem;
+}
+
+.social {
+  text-align: right;
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  position: relative;
+  bottom: 9rem;
+}
+
+@media only screen and (min-width: 450px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-size: 3rem;
+    position: relative;
+  }
+
+  .always {
+    left: 18%;
+    font-size: 1.2rem;
+    top: 7%;
+  }
+
+  .logo {
+    padding: 7% 3% 1% 10%;
+  }
+
+  .thank {
+    font-size: 1.4rem;
+    padding-top: 0;
+    margin-top: 8%;
+  }
+
+  .thank-note {
+    font-size: 1.1rem;
+    margin-bottom: 8%;
+  }
+
+  .download {
+    margin: 10% 34% 5% 34%;
+  }
+
+  .forhead {
+    font-size: 4rem;
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+
+  .social {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 10%;
+    top: 155.5rem;
+    text-align: center;
+  }
+
+  .avail span {
+    font-size: 1.3rem;
+    bottom: 2rem;
+    right: 60%;
+    font-weight: normal;
+    position: absolute;
+    text-align: center;
+  }
+
+  .play {
+    margin: 0;
+    top: 10rem;
+    right: 15rem;
+  }
+
+  .social img {
+    width: 50px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  html, body {
+    font-size: 1rem;
+    margin: 1%;
+    width: 98%;
+    overflow-x: visible;
+  }
+
+  header {
+    background-color: #f3f3f3;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  main {
+    background-color: #eae7d9;
+    padding: 0;
+  }
+
+  .title {
+    position: relative;
+    font-size: 4rem;
+    display: block;
+    margin: 0;
+    padding: 1% 0 0 0;
+    position: relative;
+    right: 4rem;
+  }
+
+  .logo {
+    width: 120px;
+    padding: 1% 2% 0 5%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .always {
+    font-size: 1.5rem;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    left: auto;
+  }
+
+  .thank {
+    margin-top: 5%;
+    font-size: 1.5rem;
+  }
+
+  .thank-note {
+    margin: 0px 10% 5% 10%;
+    font-size: 1.3rem;
+  }
+
+  .order-detalils {
+    padding: 0;
+    margin: 0;
+  }
+
+  .quantity {
+    text-align: center;
+  }
+
+  .total-table {
+    padding-left: 30%;
+  }
+
+  .td-hr {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+  }
+
+  .tbhead {
+    width: 80%;
+    background-color: #f2cbcc;
+    box-shadow: 2px 2px 4px #f0f0f0;
+  }
+
+  .download {
+    margin: 0 5% 0% 0;
+    float: right;
+  }
+
+  .forhead {
+    font-size: 300%;
+    padding-top: 3%;
+    margin-top: 3%;
+    text-align: center;
+
+  }
+  .disclaimer{
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .hr2disc{
+    padding-bottom: 3%;
+  }
+  .hr-disc{
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: black;
+    border-style: solid;
+
+  }
+  .image-foryou {
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+    margin: 0 40% 2% 28%;
+  }
+ .for-desc{
+   margin-left: 25%;
+ }
+  .sign {
+    margin-bottom: 5%;
+  }
+
+  li {
+    float: left;
+    display: block;
+  }
+
+  li a {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  footer {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+.stay {
+  text-align: right;
+  position: relative;
+  padding-right: 1rem;
+  font-weight: bold;
+  font-family: Montserrat-Medium;
+  left: 1rem;
+  transform: scaleY(0.9);
+
+}
+.icon{
+  width: 40px;
+  border-radius: 5px;
+}
+/* .stay-table {
+  position: relative;
+  bottom: 6rem;
+  text-align: right;
+  padding-right: 1.7rem;
+  right: 5rem;
+} */
